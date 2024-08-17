@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+:root {
+    --main-color: #1f3759;
+
+    --w-color: #fff;
+    --b-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+@media (min-width: 786px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 991px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+body {
+    scroll-behavior: smooth;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 500px) {
+    body {
+        scroll-behavior: smooth;
+        background-image: url(./images/bg-mobile.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+input,
+select,
+body,
+button {
+    font-family: "Beiruti", sans-serif;
+    
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+#loading-message {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.form-table {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--w-color);
+
+    font-family: "Playwrite DK Loopet", cursive;
+
+    h2 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 786px) {
+    .form-table {
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+.form .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 25px;
+}
+
+.form .container .content {
+    background-color: rgba(85, 85, 85, 0.502);
+    border-radius: 25px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.form .container form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form .container form .input-control {
+    width: 48%;
+    max-width: 100%;
+}
+
+.form .container form .input-control label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+    position: relative;
+    color: var(--w-color);
+}
+
+.form .container form .input-control label::after {
+    content: "*";
+    color: red;
+}
+
+.form .container form input,
+.form .container form select {
+    border: none;
+    background-color: var(--w-color);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 3px;
+}
+
+.form .container form .succes {
+    border: 3px solid green;
+}
+
+.form .container form .error {
+    border: 3px solid #dc3741;
+}
+
+.error-massege {
+    color: #dc3741;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form .container form input::placeholder {
+    color: #1f375990;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 999px) {
+    .form .container form .input-control {
+        width: 100%;
+    }
+}
+
+.btn {
+    margin-top: 25px;
+    color: var(--main-color);
+    background-color: var(--w-color);
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+}

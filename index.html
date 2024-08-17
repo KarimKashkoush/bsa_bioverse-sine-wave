@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioverse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body dir="rtl">
+
+    <div id="loading-message">
+        <section class="container">
+            <lottie-player src="https://lottie.host/2700378c-8ff8-4ca1-9ff1-962d99d640a4/LVJKUy2fzy.json"
+                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </section>
+    </div>
+
+    <section class="form">
+        <section class="container">
+            <section class="content">
+                <section class="form-table">
+                    <h2>BIOVERSE</h2>
+                    <p>Sine Wave</p>
+                </section>
+                <form id="form" name="contact-form">
+                    <section class="input-control personal-name-arabic">
+                        <label for="personalNameArabic">أدخل الاسم باللغة العربية</label>
+                        <input type="text" name="personal-name-arabic" id="personalNameArabic"
+                            placeholder="أدخل الاسم باللغة العربية">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control personal-name-english">
+                        <label for="personalNameEnglish">أدخل الاسم باللغة الإنجليزية</label>
+                        <input type="text" name="personal-name-english" id="personalNameEnglish"
+                            placeholder="أدخل الاسم باللغة الإنجليزية">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control university">
+                        <label for="university">اسم الجامعة - المعهد</label>
+                        <select id="university">
+                            <option value="الجامعة" selected>اسم الجامعة - المعهد</option>
+                            <option value="جامعة المنصورة">جامعة المنصورة</option>
+                            <option value="جامعة المنصورة الأهلية">جامعة المنصورة الأهلية</option>
+                            <option value="جامعة بن سويف">جامعة بن سويف</option>
+                            <option value="جامعة الاسكندرية">جامعة الاسكندرية</option>
+                            <option value="جامعة المنوفية">جامعة المنوفية</option>
+                            <option value="المعهد التكنولجي العالي">المعهد التكنولجي العالي</option>
+                            <option value="الجامعة المصرية اليابانية">الجامعة المصرية اليابانية</option>
+                            <option value="معهد فني صحي">معهد فني صحي</option>
+                            <option value="جامعة المنيا">جامعة المنيا</option>
+                            <option value="المعهد العاشر">المعهد العاشر</option>
+                            <option value="جامعة 6 أكتوبر">جامعة 6 أكتوبر</option>
+                            <option value="أخري">أخري</option>
+                        </select>
+                        <input placeholder="اسم الجامعة" type="text" name="university" id="university-input"
+                            class="input-hidden hidden">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control faculty">
+                        <label for="faculty">اسم الكليه</label>
+                        <select id="faculty">
+                            <option value="الكلية" selected>اسم الكلية</option>
+                            <option value="كلية الهندسة">كلية الهندسة</option>
+                            <option value="كلية العلوم الطبية التطبيقية">كلية العلوم الطبية التطبيقية</option>
+                            <option value="اخري">أخري</option>
+                        </select>
+                        <input placeholder="اسم الكلية" type="text" name="faculty" id="faculty-input"
+                            class="input-hidden hidden">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control major">
+                        <label for="major">اسم القسم</label>
+                        <select id="major" name="major">
+                            <option value="القسم" selected>اسم القسم</option>
+                            <option value="الهندسة الطبية">الهندسة الطبية</option>
+                        </select>
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control level">
+                        <label for="level">الليفل - الفرقة الدراسية</label>
+                        <select id="level" name="level">
+                            <option value="المستوي" selected>الليفل - الفرقة الدراسية</option>
+                            <option value="Lv000 (الفرقة الإعدادية)">Lv000 (الفرقة الإعدادية)</option>
+                            <option value="Lv100 (الفرقة الأولي)">Lv100 (الفرقة الأولي)</option>
+                            <option value="Lv200 (الفرقة الثانية)">Lv200 (الفرقة الثانية)</option>
+                            <option value="Lv300 (الفرقة الثالثة)">Lv300 (الفرقة الثالثة)</option>
+                            <option value="Lv400 (الفرقة الرابعة)">Lv400 (الفرقة الرابعة)</option>
+                            <option value="خريج">خريج</option>
+                        </select>
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control phone">
+                        <label for="phone">رقم الهاتف (واتساب)</label>
+                        <input type="tel" maxlength="11" name="phone" id="phone" placeholder="أدخل رقم الهاتف">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control email">
+                        <label for="email">الايميل الشخصي</label>
+                        <input type="email" name="email" id="email" placeholder="أدخل الايميل">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control nationalty-id hidden" >
+                        <label for="nationalty">الرقم القومي</label>
+                        <input type="text" name="nationalty-id" id="nationalty" placeholder="من فضلك أدخل الرقم القومي"
+                            maxlength="14">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control nationalty-id-front hidden" >
+                        <label for="nationaltyIdFront">أدخل لينك drive يحتوي علي الصورة الأمامية لبطاقة الرقم
+                            القومي</label>
+                        <input type="text" name="nationalty-id-front-image" id="nationaltyIdFront"
+                            placeholder="أرفق اللينك الخاص بالصورة">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control nationalty-id-back hidden" >
+                        <label for="nationaltyIdBack">أدخل لينك drive يحتوي علي الصورة الخلفية لبطاقة الرقم
+                            القومي</label>
+                        <input type="text" name="nationalty-id-back-image" id="nationaltyIdBack"
+                            placeholder="أرفق اللينك الخاص بالصورة">
+                        <span class="error-massege"></span>
+                    </section>
+
+                    <section class="input-control time hidden">
+                        <input type="text" id="time" name="time">
+                    </section>
+
+                    <button class="btn">إرسال</button>
+                </form>
+            </section>
+
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
